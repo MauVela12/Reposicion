@@ -20,7 +20,7 @@ class ProveedorController extends Controller
     public function crear(Request $request) {
         $nvoProveedor = new Proveedor();
 
-        $nvoProveedor->IdProveedor = $request->IdProveedor;
+        $nvoProveedor->IdProveedor = $request->idProveedor;
         $nvoProveedor->nombre = $request->nombre;
         $nvoProveedor->fechaRegistro = $request->fechaRegistro;
         $nvoProveedor->telefono = $request->telefono;
