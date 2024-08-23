@@ -16,23 +16,23 @@ Route::get('/productos/mostrar', [ProductoController::class, 'mostrar']);
 Route::get('/productos/agregar',
 [ProductoController::class, 'agregarProducto']);
 
-Route::get('/productos/crear',
+Route::post('/productos/crear',
 [ProductoController::class, 'crear'])->name('producto-agregar');
 
 //Rutas de Empleados
 Route::get('/empleados/mostrar', [EmpleadoController::class, 'mostrar']);
 
 Route::get('/empleados/agregar',
-[EmpleadoController::class, 'crearProducto']);
+[EmpleadoController::class, 'agregarEmpleado']);
 
-Route::get('/empleados/crear',
+Route::post('/empleados/crear',
 [EmpleadoController::class, 'crear'])->name('empleado-agregar');
 
 //Rutas de Proveedores
 Route::get('/proveedores/mostrar', [ProveedorController::class, 'mostrar']);
 
 Route::get('/proveedores/agregar',
-[ProveedorController::class, 'crearProducto']);
+[ProveedorController::class, 'agregarProveedor']);
 
-Route::get('/proveedores/crear',
+Route::post('/proveedores/crear',
 [ProveedorController::class, 'crear'])->name('proveedor-agregar');
